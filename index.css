@@ -1,3 +1,116 @@
-body {
-    margin: 0;
+/* ---------------------- */
+/* Fonts                  */
+/* ---------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
+
+/* ---------------------- */
+/* Custom properties      */
+/* ---------------------- */
+
+:root {
+  --clr-neutral: #fbf7ee;
+  --clr-light-black: #1a1921;
+  --clr-dark-blue: #1c1c1c;
+  --clr-dark-gray: #4e4e4e;
+
+  --ff-main: "Inter", sans-serif;
 }
+
+/* ---------------------- */
+/* Reset                  */
+/* ---------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* ---------------------- */
+/* Typography             */
+/* ---------------------- */
+
+html {
+  font-size: 14px;
+  font-family: var(--ff-main);
+  background-color: var(--clr-dark-blue);
+}
+
+h1 {
+  font-weight: 800;
+  padding-bottom: 1em;
+}
+
+h3 {
+  font-weight: 600;
+  color: var(--clr-light-black);
+}
+
+p {
+  font-weight: 400;
+  color: var(--clr-dark-gray);
+}
+
+footer {
+  padding: 2em;
+}
+
+/* ---------------------- */
+/* Components             */
+/* ---------------------- */
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.container {
+  width: min(90%, 40rem);
+}
+
+.hero {
+  background-image: linear-gradient(
+    -120deg,
+    hsl(238deg 99% 67%) 0%,
+    hsl(248deg 99% 66%) 11%,
+    hsl(259deg 98% 65%) 22%,
+    hsl(269deg 98% 65%) 33%,
+    hsl(279deg 98% 64%) 44%,
+    hsl(290deg 97% 63%) 56%,
+    hsl(300deg 97% 62%) 67%,
+    hsl(310deg 97% 62%) 78%,
+    hsl(321deg 96% 61%) 89%,
+    hsl(331deg 96% 60%) 100%
+  );
+  padding: 3em;
+  color: #fff;
+}
+
+#number-el {
+  font-size: 7em;
+  font-weight: 800;
+}
+
+.conversions {
+  padding: 3em;
+  background-color: var(--clr-neutral);
+}
+
+.conversions * {
+  margin: 0.5em 0;
+}
+
+.conversion {
+  margin: 2.5em 0;
+}
+
